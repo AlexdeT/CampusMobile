@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/fr.alexdet.android"
+    android:id="@+id/splash"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/splash"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:id="@+id/table_row_title"
+        style="@style/myeceparis_tableRow"
+        android:layout_height="@dimen/tableRowTitleHeight" >
+
+        <fr.alexdet.android.view.CustomFontTextView
+            android:id="@+id/titre"
+            style="@style/myeceparis_textView"
+            android:lines="2"
+            android:text="@string/welcome"
+            android:textSize="25sp"
+            app:fontName="ChampagneBold" />
+    </TableRow>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/table_row_title"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/img"
+        android:src="@drawable/logo" />
+
+    <fr.alexdet.android.view.CustomFontTextView
+        android:id="@+id/title"
+        style="@style/myeceparis_textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:gravity="bottom|center"
+        android:text="@string/author"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:fontName="Champagne" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/fr.alexdet.android"
+    android:id="@+id/course_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_background"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:id="@+id/table_row_title"
+        style="@style/myeceparis_tableRow"
+        android:layout_height="@dimen/tableRowTitleHeight" >
+
+        <fr.alexdet.android.view.CustomFontTextView
+            android:id="@+id/TextView01"
+            style="@style/myeceparis_textView"
+            android:lines="2"
+            android:textSize="25sp"
+            app:fontName="ChampagneBold" />
+    </TableRow>
+
+    <ExpandableListView
+        android:id="@+id/expandableView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" >
+    </ExpandableListView>
+
+</LinearLayout>

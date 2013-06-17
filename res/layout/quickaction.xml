@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** /res/layout/quickaction.xml
+**
+** Author: Lorensius W. L. T <lorenz@londatiga.net>
+**
+*/ 
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/fr.alexdet.android"
+    android:layout_width="@dimen/popUpWindowWidth"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal" >
+
+    <ImageView
+        android:id="@+id/arrow_up"
+        android:layout_width="@dimen/popUpWindowWidth"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/img"
+        android:src="@drawable/quickaction_arrow_up" />
+
+    <FrameLayout
+        android:id="@+id/header2"
+        android:layout_width="@dimen/popUpWindowWidth"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/arrow_up"
+        android:background="@drawable/quickaction_top_frame" >
+
+        <fr.alexdet.android.view.CustomFontTextView
+            android:id="@+id/title"
+            style="@style/myeceparis_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/notification"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="25sp"
+            app:fontName="ChampagneBold" />
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="@dimen/popUpWindowWidth"
+        android:layout_height="@dimen/popUpWindowHeight"
+        android:layout_below="@id/header2"
+        android:background="@color/bleue_entete_border"
+        android:fadingEdgeLength="0dip"
+        android:padding="1dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/tracks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/footer"
+        android:layout_width="@dimen/popUpWindowWidth"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scroll"
+        android:background="@drawable/quickaction_bottom_frame" />
+
+</RelativeLayout>

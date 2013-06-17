@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <layer-list xmlns:android="http://schemas.android.com/apk/res/android" > -->
+
+<!-- <item -->
+<!-- android:left="-2dp" -->
+<!-- android:right="-2dp" -->
+<!-- android:top="-2dp"> -->
+<!-- <shape> -->
+<!-- <gradient -->
+<!-- android:angle="270" -->
+<!-- android:centerColor="@color/bleue_entete_border" -->
+<!-- android:endColor="@color/bleue_entete_middle" -->
+<!-- android:startColor="@color/bleue_entete_border" -->
+<!-- android:type="linear" /> -->
+
+<!-- <stroke -->
+<!-- android:width="1sp" -->
+<!-- android:color="@android:color/black" /> -->
+<!-- </shape> -->
+<!-- </item> -->
+
+<!-- </layer-list> -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:bottom="-2sp"
+        android:left="-2sp">
+        <shape>
+            <gradient
+                android:angle="270"
+                android:centerColor="@color/bleue_top"
+                android:endColor="@color/bleue_bottom"
+                android:startColor="@color/bleue_top"
+                android:type="linear" />
+
+            <stroke
+                android:width="1sp"
+                android:color="@android:color/darker_gray" />
+        </shape>
+    </item>
+
+</layer-list>

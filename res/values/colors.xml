@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- menu -->
+    <color name="menu_title">#ffffff</color>
+    <color name="white_background">#FFFFFD</color>
+
+    <!-- en tete absence et note -->
+    <color name="bleue_top">#006BFF</color>
+    <color name="bleue_bottom">#0446A6</color>
+    <color name="bleue_entete_middle">#4D97FF</color>
+    <color name="bleue_entete_border">#9AC4FF</color>
+
+    <!-- actionbar -->
+    <color name="action_bar">#3E403E</color>
+    <color name="pressed_myeceparis">#CC33B5E5</color>
+
+    <!-- ece campus color -->
+    <color name="gris_ece_fill">#A4B5CD</color>
+    <color name="gris_ece_border">#526F96</color>
+    <color name="gris_ece_info">#787878</color>
+    <color name="gris_ece_info_shape">#525252</color>
+
+</resources>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/fr.alexdet.android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@color/white_background"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/gradeTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TableRow
+                android:id="@+id/table_row_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tableRowTitleHeight"
+                android:background="@drawable/table_row_info"
+                android:gravity="center"
+                android:weightSum="2" >
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="@string/semestre1"
+                    android:textSize="25sp"
+                    android:visibility="visible"
+                    app:fontName="ChampagneBold" />
+
+                <ImageView
+                    android:id="@+id/buttonSeparator"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/img"
+                    android:src="@drawable/button_separator"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="@string/semestre2"
+                    android:textSize="25sp"
+                    android:visibility="visible"
+                    app:fontName="ChampagneBold" />
+            </TableRow>
+
+            <!-- SEMESTER 1 -->
+
+            <TableLayout
+                android:id="@+id/tableLayoutS1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="*"
+                android:stretchColumns="*"
+                android:visibility="visible" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_semestre" >
+
+                    <fr.alexdet.android.view.CustomFontTextView
+                        style="@style/myeceparis_textView"
+                        android:background="@drawable/menu_item_notification"
+                        android:text="@string/gradeCourseName"
+                        android:textColor="@android:color/black"
+                        app:fontName="ChampagneBold" />
+
+                    <fr.alexdet.android.view.CustomFontTextView
+                        style="@style/myeceparis_textView"
+                        android:background="@drawable/menu_item_notification"
+                        android:text="@string/grade"
+                        android:textColor="@android:color/black"
+                        app:fontName="ChampagneBold" />
+
+                    <fr.alexdet.android.view.CustomFontTextView
+                        style="@style/myeceparis_textView"
+                        android:background="@drawable/menu_item_notification"
+                        android:text="@string/gradeAverage"
+                        android:textColor="@android:color/black"
+                        app:fontName="ChampagneBold" />
+                </TableRow>
+            </TableLayout>
+
+            <!-- SEMESTER 2 -->
+
+            <TableLayout
+                android:id="@+id/tableLayoutS2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="*"
+                android:stretchColumns="*"
+                android:visibility="visible" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_semestre" >
+
+                    <fr.alexdet.android.view.CustomFontTextView
+                        style="@style/myeceparis_textView"
+                        android:background="@drawable/menu_item_notification"
+                        android:text="@string/gradeCourseName"
+                        android:textColor="@android:color/black"
+                        app:fontName="ChampagneBold" />
+
+                    <fr.alexdet.android.view.CustomFontTextView
+                        style="@style/myeceparis_textView"
+                        android:background="@drawable/menu_item_notification"
+                        android:text="@string/grade"
+                        android:textColor="@android:color/black"
+                        app:fontName="ChampagneBold" />
+
+                    <fr.alexdet.android.view.CustomFontTextView
+                        style="@style/myeceparis_textView"
+                        android:background="@drawable/menu_item_notification"
+                        android:text="@string/gradeAverage"
+                        android:textColor="@android:color/black"
+                        app:fontName="ChampagneBold" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loading_status"
+            android:layout_width="wrap_content"
+            android:layout_height="460dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/loading_status_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/loading_process"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

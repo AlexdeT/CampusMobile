@@ -1,0 +1,85 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ActionBar Style -->
+    <style name="myeceparis_solid_ActionBar" parent="@style/Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="background">@drawable/action_bar_drop_shadow</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_myeceparis</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_myeceparis</item>
+        <item name="android:background">@drawable/ab_solid_myeceparis</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_myeceparis</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_myeceparis</item>
+    </style>
+
+    <!-- Slide menu style -->
+    <style name="MenuDrawer" />
+
+    <style name="MenuDrawer.Widget" />
+
+    <style name="MenuDrawer.Widget.Category">
+        <item name="android:background">@drawable/menu_category_shadow</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">13dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MenuDrawer.Widget.Title">
+        <item name="android:background">@drawable/menu_item_background</item>
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">13dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="MenuDrawerStyle" parent="Widget.MenuDrawer">
+        <item name="mdActiveIndicator">@drawable/menu_arrow</item>
+        <item name="mdMenuSize">250dp</item>
+    </style>
+
+    <style name="MenuDrawerStyle.Right" parent="Widget.MenuDrawer">
+        <item name="mdActiveIndicator">@drawable/menu_arrow_right</item>
+        <item name="mdMenuSize">150dp</item>
+    </style>
+
+    <style name="MenuDrawerStyle.Top" parent="Widget.MenuDrawer">
+        <item name="mdActiveIndicator">@drawable/menu_arrow_top</item>
+        <item name="mdMenuSize">64dp</item>
+        <item name="mdAllowIndicatorAnimation">true</item>
+    </style>
+
+    <!-- Custom Style -->
+    <style name="myeceparis_editText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/login_edit_text</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="myeceparis_textView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="myeceparis_tableRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/table_row_info</item>
+        <item name="android:textColor">#256C89</item>
+    </style>
+
+</resources>

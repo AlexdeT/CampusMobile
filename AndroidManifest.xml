@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.alexdet.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="18" />
+
+    <!-- android -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- google cloud messaging -->
+    <permission
+        android:name="fr.alexdet.android.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="fr.alexdet.android.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- google map -->
+
+    <permission
+        android:name="fr.alexdet.android.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="fr.alexdet.android.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <!-- application -->
+    <application
+        android:name="fr.alexdet.android.controller.SharedApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.MyEceParis" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <!-- Google Cloud Messaging -->
+
+        <receiver
+            android:name="fr.alexdet.android.model.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="fr.alexdet.android" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="fr.alexdet.android.model.gcm.GCMIntentService" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDxgVIovsWkrWKm6YFFEebbHpufIRGgTFo" />
+
+        <!-- Activities -->
+        <activity
+            android:name="fr.alexdet.android.controller.SplashActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fr.alexdet.android.controller.SlideMenuActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="fr.alexdet.android.controller.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="fr.alexdet.android.controller.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyEceParis.LeftDrawer" >
+        </activity>
+        <activity
+            android:name="fr.alexdet.android.controller.CourseSlideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyEceParis.RightDrawer" >
+        </activity>
+        <activity
+            android:name="fr.alexdet.android.controller.MapActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

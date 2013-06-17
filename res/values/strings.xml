@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- google cloud messaging -->
+    <string name="SENDER_ID">527280961620</string>
+
+    <!-- application -->
+    <string name="app_name">ECE Paris</string>
+    <string name="author">Application designed by: \nAlexis de Talhouët, 2012/2013</string>
+    <string name="img">img</string>
+    <string name="notification">Notifications :</string>
+    <string name="loading_process">Chargement des données en cours</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="logout">Voulez-vous vraiment vous déconnecter ? \nCela effacera toutes vos données</string>
+    <string name="confirmationExit">Voulez-vous vraiment quitter l\'application ?</string>
+    <string name="warningMultiUser">Attention, un utilisateur a ses données enregistrées en local, si vous vous connecté, toutes ses données seront suprimées</string>
+
+    <!-- string related to the left menu -->
+    <string name="menu_info">Informations</string>
+    <string name="menu_mdp">Mot de passe</string>
+    <string name="title_webapps">WebApps</string>
+    <string name="menu_notes">Notes</string>
+    <string name="menu_absences">Absences</string>
+    <string name="menu_cours">Cours</string>
+    <string name="title_help">Help</string>
+    <string name="menu_qfq">Qui fait quoi ?</string>
+    <string name="menu_plan">Plans</string>
+    <string name="menu_logout">Logout</string>
+
+    <!-- Stringds related to welcome page -->
+    <string name="start">Commencer</string>
+    <string name="text_bienvenue">
+<![CDATA[
+<html>
+	<body>
+		<p class="p1">
+			<b>Bienvenue sur MyECEParis</b></p>
+		<p class="p1">
+			L&#39;application qui regroupe tes informations scolaires.</p>
+	</body>
+</html>
+	]]>
+    </string>
+    <string name="credit">
+<![CDATA[
+<html>
+	<body>
+		<p class="p1">
+			<b>Projet PPE r&eacute;alis&eacute; par : </b></p>
+		<ul>
+			<li class="p1">
+				C&eacute;sar Berezowski</li>
+			<br />
+			<li class="p1">
+				Timoth&eacute;e Grosjean</li>
+			<br />
+			<li class="p1">
+				Gabriel Collignon</li>
+			<br />
+			<li class="p1">
+				Samy Bengalen</li>
+			<br />
+			<li class="p1">
+				Alexis de Talhouet</li>
+		</ul>
+		<h5>
+			v1.0</h5>
+	</body>
+</html>
+	]]>
+    </string>
+
+    <!-- Strings related to login -->
+    <string name="msg_connexion">Entrez votre identifiant et votre mot de passe :</string>
+    <string name="logo_ece">ECE Ecole d\'ingénieurs Paris</string>
+    <string name="prompt_email">ECE CAS login</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_register"><b>Se Connecter</b></string>
+    <string name="mdp_oubliee_link"><u><i>Mot de passe oublié</i></u></string>
+    <string name="mdp_oubliee">Mot de passe oublié</string>
+    <string name="mdp_subTitre">Perte de vos identifiants ECE</string>
+    <string name="remember">Mémoriser</string>
+    <string name="mdp_instruction">
+<![CDATA[
+<html>
+	<body>
+		<p>
+			<span style="color: rgb(14, 67, 84); font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">Pour toute perte ou oubli de votre mot de passe, merci de suivre la proc&egrave;dure indiqu&eacute;e ci dessous :</span></p>
+	</body>
+</html>
+<body>
+	<p>
+		<li style="color: rgb(14, 67, 84); font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">
+			<b>ETUDIANT&nbsp;:</b>&nbsp;<br />
+			Merci de passer voir l&#39;Equipe Syst&egrave;me (ES) en P404 muni obligatoirement de votre carte d&#39;&eacute;tudiant ou d&#39;impression.&nbsp;<br />
+			En cas d&#39;absence, vous pouvez vous adresser aux administrateurs syst&egrave;mes en P427.<br />
+			&nbsp;</li>
+	</p>
+</body>
+<body>
+	<p>
+		<li style="color: rgb(14, 67, 84); font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">
+			<b>ETUDIANT &agrave; l&#39;&eacute;tranger , PROFESSEUR&nbsp; , SALARIE PERMANENT et autres types de comptes:</b>&nbsp;<br />
+			Merci de contacter par t&egrave;l&egrave;phone (+33 144390190) ou par email (sysadm@ece.fr) les administrateurs syst&egrave;mes et de pr&eacute;ciser en plus de votre nom, de votre pr&egrave;nom, de votre identifiant UNIX:<br />
+			Si vous &ecirc;tes &eacute;tudiant : Num&eacute;ro de s&eacute;curit&eacute; sociale, et num&eacute;ro de carte d&#39;&eacute;tudiant (ou d&#39;impression).&nbsp;<br />
+			Dans les autres cas : tout moyen de vous identifier.</li>
+	</p>
+	</body>
+	]]>
+    </string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="login">Connexion</string>
+    <string name="login_progress_signing_in">Authentification&#8230;</string>
+    <string name="error_invalid_email">The login and/or the password are invalid</string>
+    <string name="error_field_required">This field is required</string>
+
+    <!-- String related to page title -->
+    <string name="welcome">Bienvenue</string>
+    <string name="goodbye">A bientôt</string>
+    <string name="qfq">Qui fait quoi ?</string>
+    <string name="map">Plan de l\'ECE</string>
+    <string name="semestre1">Semestre 1</string>
+    <string name="semestre2">Semestre 2</string>
+    <string name="attendance">Absences</string>
+
+    <!-- String related to Grades -->
+    <string name="gradeCourseName">Intitulé</string>
+    <string name="grade">Note</string>
+    <string name="gradeAverage">Moyenne \n Classe</string>
+
+    <!-- String related to Absences -->
+    <string name="attendanceDate">Date</string>
+    <string name="attendanceStart">Heure \n début</string>
+    <string name="attendanceEnd">Heure \n fin</string>
+    <string name="attendanceType">Type</string>
+
+    <!-- String related to Info -->
+    <string name="info_ece">Informations ECE</string>
+    <string name="promotion">Promotion</string>
+    <string name="majeure">Majeure</string>
+    <string name="mineure">Mineure</string>
+    <string name="va">Voie d\'approfondissement</string>
+    <string name="groupe">Groupe</string>
+    <string name="section_inter">Section Internationale</string>
+    <string name="info_admin">Informations Administratives</string>
+    <string name="nom">Nom complet</string>
+    <string name="adresse">Adresse</string>
+    <string name="tel">Téléphone</string>
+    <string name="email">E-mail</string>
+    <string name="birth">Naissance</string>
+    <string name="nationalite">Nationalité</string>
+    <string name="secsoc">Sécurité sociale</string>
+    <string name="assurance">Assurance de responsabilité civile</string>
+    <string name="societe">Société</string>
+    <string name="dates">Dates</string>
+
+    <!-- string related to Password Changer -->
+    <string name="password_changer_progress">Veuillez patienter&#8230;</string>
+    <string name="titre_password_changer">Changer votre mot de passe</string>
+    <string name="loginHint">ECE CAS login</string>
+    <string name="currentPassHint">Current password</string>
+    <string name="newPass1Hint">New password</string>
+    <string name="newPass2Hint">Confirm new password</string>
+    <string name="warning">This application will change both your UNIX and Windows passwords!</string>
+    <string name="goButton">Press to change</string>
+    <string name="test_message">Test dialog message</string>
+    <string name="confirm_result">OK</string>
+    <string name="pass_rules">Cette application changera votre mot de passe UNIX et Windows sur le réseau ECE. Vous devez respecter en autres les régles suivantes: Votre mot de passe doit contenir de 8 à 14 caractères maximum. Il doit contenir au moins DEUX majuscules, DEUX minuscules, UN chiffre et UN caractère spécial. Les caractères spéciaux disponibles sont: ,.;\&gt;\&lt;:~([-|_\\^@)]+%. Le mot de passe ne doit pas être un de vos anciens mots de passe. Le mot de passe ne doit pas contenir votre nom, prénom ou tout mot courant.Le mot de passe ne doit pas contenir d\'espace.</string>
+    <string name="error_newpass_different">The new passwords must be identical, but they are not!</string>
+    <string name="error_network_unavail">Network unavailable. Please try again later.</string>
+    <string name="error_network_error">Network error. Please try again later.</string>
+    <string name="title_failure">Password not changed</string>
+    <string name="title_success">Password successfully changed</string>
+    <string name="title_undetermined">Result undetermined</string>
+    <string name="accepted">Your new password was accepted. Please wait 5 minutes for propagation to all systems.</string>
+    <string name="recently_accepted">Your password was recently changed. You must wait at least 5 minutes before it can be changed again.</string>
+    <string name="undetermined">No idea if the change was accepted or not</string>
+    <string name="refused">Your new password was refused by the system. Please check that the rules are respected.</string>
+    <string name="cas_auth_failed">Login or password not recognised by the CAS.</string>
+    <string name="cas_protocol_error">CAS protocol failure.</string>
+
+</resources>

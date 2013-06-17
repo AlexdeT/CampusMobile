@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** /res/layout/action_item.xml
+**
+** Author: Lorensius W. L. T <lorenz@londatiga.net>
+**
+** Adapted for MyECEParis : - Alexis de Talhouët
+*/ 
+-->
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/fr.alexdet.android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/quickaction_slider_item"
+    android:clickable="true"
+    android:focusable="true" >
+
+    <fr.alexdet.android.view.CustomFontTextView
+        android:id="@+id/tv_title"
+        style="@style/MenuDrawer.Widget.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:lines="3"
+        app:fontName="ChampagneBold" />
+
+</TableRow>

@@ -1,0 +1,179 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/fr.alexdet.android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background"
+    tools:context=".LoginCASActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_background"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/table_row_title"
+            style="@style/myeceparis_tableRow"
+            android:layout_height="@dimen/tableRowTitleHeight" >
+
+            <fr.alexdet.android.view.CustomFontTextView
+                android:id="@+id/titre"
+                style="@style/myeceparis_textView"
+                android:lines="2"
+                android:text="@string/login"
+                android:textSize="25sp"
+                app:fontName="ChampagneBold" />
+        </TableRow>
+
+        <ScrollView
+            android:id="@+id/lost_password_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ImageView01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/logo_ece"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/subTitre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.03"
+                    android:gravity="center_horizontal"
+                    android:padding="16dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/mdp_subTitre"
+                    android:textColor="#256C89"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/instruction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:text="@string/mdp_instruction" />
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Login progress -->
+
+        <LinearLayout
+            android:id="@+id/login_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/login_status_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/login_progress_signing_in"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <!-- Login form -->
+
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ImageView02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/logo_ece"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/msgConnexion"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.03"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:text="@string/msg_connexion"
+                    android:textColor="#256C89"
+                    android:textSize="16sp" />
+
+                <fr.alexdet.android.view.MyClearableEditText
+                    android:id="@+id/login"
+                    style="@style/myeceparis_editText"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress" />
+
+                <fr.alexdet.android.view.MyClearableEditText
+                    android:id="@+id/password"
+                    style="@style/myeceparis_editText"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/prompt_password"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:id="@+id/sign_in_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp"
+                    android:text="@string/action_sign_in_register"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/mdp_perdu"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/background_light"
+                    android:text="@string/mdp_oubliee_link"
+                    android:textColor="#256C89"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</merge>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MyEceParis"></style>
+
+    <style name="Theme.MyEceParis" parent="@style/Theme.Sherlock.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/myeceparis_solid_ActionBar</item>
+        <item name="android:actionBarStyle">@style/myeceparis_solid_ActionBar</item>
+    </style>
+
+    <style name="Theme.MyEceParis.LeftDrawer" parent="Theme.MyEceParis">
+        <item name="menuDrawerStyle">@style/MenuDrawerStyle</item>
+    </style>
+
+    <style name="Theme.MyEceParis.RightDrawer" parent="Theme.MyEceParis">
+        <item name="menuDrawerStyle">@style/MenuDrawerStyle.Right</item>
+    </style>
+    
+    <style name="Theme.MyEceParis.TopDrawer" parent="Theme.MyEceParis">
+        <item name="menuDrawerStyle">@style/MenuDrawerStyle.Top</item>
+    </style>
+
+</resources>
