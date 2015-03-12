@@ -18,4 +18,4 @@ In order to use the application you need to add 3 libraries :
  Developed By
 =============
 
-* Alexis de Talhouët - <alexis.de.t.dev@gmail.com>
+* Alexis de Talhouët - <alexis.de.t@gmail.com>
